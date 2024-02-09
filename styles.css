@@ -1,0 +1,152 @@
+
+@font-face {
+  font-family: 'firasans-black';
+  font-weight: 900;
+  src: url('fonts/firasans-black-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'firasans-regular';
+  font-weight: 400;
+  src: url('fonts/firasans-regular-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'firasans-medium';
+  font-weight: 600;
+  src: url('fonts/firasans-medium-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'firasans-light';
+  font-weight: 300;
+  src: url('fonts/firasans-light-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'kanit-black';
+  font-weight: 900;
+  src: url('fonts/kanit-black-webfont.woff2') format('woff2');
+}
+
+
+:root {
+  --bg-1: #dce1ee;
+  --bg-2: #9ec2e0;
+  --red: #961521;
+  --blue: #1b336d;
+  --lightblue: #37466a;
+}
+
+*  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.3rem;
+}
+img  {
+  display: block;
+  width: 100%;
+}
+ul  {
+  list-style-type: none;
+}
+/* UTILITIES */
+.bg-1  {
+  background-color: var(--bg-1);
+}
+.bg-2  {
+  background-color: var(--bg-2);
+}
+.flexrow  {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  place-content: center;
+}
+.grid-col-3 {
+  display: grid;
+  gap: .2rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.brand-logo {
+  max-width: 1.5rem;
+}
+.txt-cen {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+/* STYLES */
+body {
+  font-family: 'firasans-light';
+}
+main {
+  min-height: 100vh;
+}
+.container  {
+  padding: .5rem;
+}
+.header, .tel, .title {
+  font-family: 'firasans-black';
+}
+.header {
+  color: var(--blue);
+  min-height: 30%;
+  line-height: 1.8rem;
+  font-family: 'firasans-medium';
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+.main {
+  padding: .5rem;
+}
+.brands ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  font-family: 'firasans-black';
+  font-size: 1.5rem;
+  margin-block-end: .5rem;
+}
+.brands ul li:first-child {
+  font-family: 'kanit-black';
+  font-weight: 900;
+  font-style: italic;
+}
+.brands ul li:nth-of-type(2) {
+  color: var(--red);
+}
+.brands ul li:last-child {
+  font-style: italic;
+  color: var(--blue);
+}
+.info img {
+  max-width: 4rem;
+  align-self: center;
+  justify-self: center;
+}
+.info img:nth-of-type(2) {
+  max-width: 5rem;
+}
+.title {
+  color: var(--lightblue);
+  font-family: 'firasans-medium';  
+}
+.open-from {
+  font-family: 'firasans-medium';
+  font-size: .8rem;
+}
+.tel {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+
